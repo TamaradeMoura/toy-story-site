@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    text-align: center;
+
+    .button {
+        margin-left: 25%;
+        margin-top: 10px;
+
+        @media (max-width: 768px) {
+            margin: auto;
+            margin-top: 16px;
+        }
+    }
+
+    &__content {
+        max-width: 640px;
+        display: block;
+
+        &__branding {
+            display: flex;
+            
+            
+            &__logo {
+                max-width: 500px;
+                max-height: 400px;
+                
+                @media (max-width: 768px) {
+                    max-width: 350px;
+                    max-height: 250px;
+                }
+
+                @media (min-width: 641px) and (max-width: 1023px) {
+                    margin-left: 14%;
+                }
+                
+            }
+            
+            &__toy {
+                position: absolute;
+                right: 5px;
+                max-width: 50%;
+                
+                @media (max-width: 768px) {
+                    visibility: hidden;
+                }
+                
+                @media (min-width: 641px) and (max-width: 1023px) {
+                    margin-top: 500px;
+                    margin-right: 29%;
+                }
+            }
+        }
+
+        &__text {
+            padding-top: 10px;
+        }
+
+        
+    }
+}
